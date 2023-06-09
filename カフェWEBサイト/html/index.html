@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>代々木カフェ</title>
+      <link href="reset.css" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <link href="bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="bxslider/jquery.bxslider.min.js"></script>
+    <script>
+            $(function(){
+	           $('.bxslider').bxSlider({
+		       auto: true,
+		       slideWidth: 1000,
+		       
+	   });
+            });
+</script>
+</head>
+<body>
+    <div id="wood">
+        <header>
+            <h1><img src="img/logo.png" alt="代々木カフェ"></h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">ABOUT<br><span>当店について</span></a></li>
+                <li><a href="#">NEWS<br><span>ニュース</span></a></li>
+                <li><a href="#">MENU<br><span>メニュー</span></a></li>
+                <li><a href="#">ONLINE SHOP<br><span>オンラインショップ</span></a></li>
+            </ul>
+        </nav>
+
+        <div id="main_visual">
+            <ul class="bxslider">
+                <li><img src="img/slide01.jpg" alt=""></li>
+                <li><img src="img/slide02.jpg" alt=""></li>
+                <li><img src="img/slide03.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    
+    <article>
+        
+        <section id="news">
+            <h2>NEWS<br><span>ニュース</span></h2>
+            <ul>
+                <li><img src="img/news_p0430.jpg" alt=""><br>2017.04.30<br>5月のマンスリーメニューのご紹介</li>
+                <li><img src="img/news_p0415.jpg" alt=""><br>2017.04.15<br>営業時間変更のお知らせ</li>
+                <li><img src="img/news_p0410.jpg" alt=""><br>2017.04.10<br>期間限定メニューのお知らせ</li>
+            </ul>
+            <p class="btn"><a href="#">NEWS一覧</a></p>
+        </section>
+        
+        <section id="menu">
+            <h2>MENU<br><span>メニュー</span></h2>
+             <div class="category">
+               <dl>
+                <dt><img src="img/menu_p_drk.jpg" alt=""><br>DRINK</dt>
+                <dd>ブレンドコーヒー</dd>
+                <dd>ブレンドティー</dd>
+                <dd>カフェラテ</dd>
+                <dd>カプチーノ</dd>
+                <dd>コーラ</dd>
+                <dd>スプライト</dd>
+                <dd>ジンジャーエール</dd>
+                <dd>オレンジジュース</dd>
+            </dl>
+            <dl>
+                <dt><img src="img/menu_p_swts.jpg" alt=""><br>SWEETS</dt>
+                <dd>バナナチョコレートケーキ</dd>
+                <dd>クリームチョコレートケーキ</dd>
+                <dd>バニラチョコレートケーキ</dd>
+                <dd>ハニーライムチーズケーキ/dd>
+                <dd>チーズケーキ</dd>
+                <dd>ブルーベリーケーキ</dd>
+                <dd>チョコレートサンデー</dd>
+                <dd>キャラメルバナナサンデー</dd>
+            </dl>
+            <dl>
+                <dt><img src="img/menu_p_brgr.jpg"><br>BURGER &amp; SIDE DISH</dt>
+                <dd>ハンバーガー</dd>
+                <dd>チーズバーガー</dd>
+                <dd>ベーコンエッグバーガー</dd>
+                <dd>フィッシュバーガー</dd>
+                <dd>テリヤキバーガー</dd>
+                <dd>フライドポテト</dd>
+                <dd>オニオンリング</dd>
+                <dd>フライドチキン </dd>
+            </dl>
+            </div>
+            
+        </section>
+        
+        <section id="shop">
+            <h2>ONLINE SHOP<br><span>オンラインショップ</span></h2>
+        <div class="row">
+                <p><img src="img/shop_p.jpg" alt=""></p>
+                <div>
+                <p class="msg">厳選したコーヒーをご自宅で。</p>
+                <p class="msg">お世話になっている大切なあの方に。</p>
+                <p class="msg">YOYOGI CAFEの味を宅配便で<br>全国へお届けいたします。</p>
+                <p class="btn"><a href="#">詳しくはこちら</a></p>
+            </div>
+        </div>
+        </section>
+    
+    </article>
+    
+    <footer>
+        <p class="tel"><span>TEL</span>03-5358-5401</p>
+        <p>営業時間</p>
+        <p>AM 9:00 ～ PM 22:30</p>
+        <p>年中無休</p>
+        <p class="address">〒151-0053 東京都渋谷区代々木1-2-3</p>
+        <ul>
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

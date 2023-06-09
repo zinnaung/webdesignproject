@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+body{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    font-family:'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+
+}
+
+header,nav,#main_visual,article{
+    width: 1000px;
+    margin: auto;
+}
+#wood,footer{
+    background-image: url(img/bg_wood.jpg);
+}
+
+#wood{
+    padding: 50px 0px;
+}
+
+/*文字の設定*/
+h1{
+    margin-bottom: 60px;
+}
+
+
+h2{
+    font-size: 70px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    line-height: 0.6;
+    margin-bottom: 40px;
+}
+h2 span{
+    font-size: 24px;
+    font-family:'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+
+}
+ul {
+    list-style-type: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+/*ナビゲーション*/
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+nav li{
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+    line-height: 0.8;
+    width: 25%;
+    border-left: 1px solid #000;
+}
+nav li:last-child {
+    border-right: 1px solid #000;
+}
+
+nav span{
+        font-family:'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+    font-weight: 400;
+    font-size: 14px;
+
+}
+nav a:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+nav a {
+    display: block;
+}
+
+/*各エリア共通設定*/
+
+section {
+padding: 50px 0px;
+border-bottom: 1px solid #000;
+}
+
+section:last-child {
+    border: none;
+}
+
+/*NEWSエリア*/
+#news ul{
+    display: flex;
+    justify-content: space-between;
+}
+#news li {
+    text-align: center;
+    line-height: 1.5;
+}
+/*NEWS一覧ボタンの外部余白*/
+#news .btn{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+/*MENUエリア*/
+.category{
+    display: flex;
+    justify-content: space-between;
+}
+#menu dt img{
+    margin-bottom: 30px;
+    
+}
+#menu dt{
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+}
+#menu dd{
+    line-height: 1.8;
+    font-size: 16px;
+}
+/*SHOPエリア*/
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.msg {
+    font-size: 24px;
+    line-height: 1.8;
+}
+
+/*ボタン*/
+.btn a{
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 15px 70px;
+}
+
+.btn a:hover{
+    background-color: #ffffc6;
+}
+/*SHOPボタンの余白*/
+
+#shop .btn a{
+    padding: 20px 150px;
+}
+
+#shop .btn{
+    margin-top: 50px;
+}
+/*footer*/
+
+footer{
+    font-size: 20px;
+    padding: 50px 0px 40px;
+}
+
+.tel {
+    font-size: 60px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 15px;
+}
+
+.tel span{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.address{
+    margin-top: 30px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 18px;
+}
+
+footer ul li {
+    padding: 0px 25px;
+    border-left: 1px solid #000;
+}
+
+footer ul li:last-child{
+    border-right: 1px solid #000;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

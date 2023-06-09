@@ -1,0 +1,222 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+/*-------------------------------
+共通部分
+--------------------------------*/
+body{
+    text-align: center;
+    color: #2a2a2a;
+    font-size: 18px;
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'  
+
+}
+
+h1,h2{
+    font-family: 'Teko', sans-serif;
+    font-weight: normal;
+}
+
+ul{
+    list-style-type: none;
+}
+@media only screen and (max-width: 560px){
+   
+    *, *:before, *:after{
+        box-sizing: border-box;
+    }
+}
+
+/*PCとSPで画像の切り替え*/
+
+.pc{
+  display: block;
+}
+.sp{
+    display: none;
+}
+
+@media only screen and (max-width: 560px){
+    
+    .pc{
+        display: none;
+    }
+
+
+  .sp{
+    display: block;
+}
+}
+/*---------------------------
+ヘッダー
+----------------------------*/
+
+header {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 60px;
+    margin: 40px 0px;
+}
+
+@media only screen and (max-width: 560px){
+    header{
+width: 100%;}
+}
+h1{
+    font-size: 37px;
+    margin: 30px 0px;
+}
+/*-----------------------
+ナビゲーション
+------------------------*/
+
+nav{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+nav ul{
+    display: flex;
+}
+
+#navbg {
+    width: 100%;
+    background-color: #117b52;
+}
+
+nav li{
+    box-sizing: border-box;
+    width: 25%;
+    border-right: 1px solid #fff;
+}
+
+nav li:first-child{
+    border-left: 1px solid #fff;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 16px 0px;
+}
+
+nav li a:hover {
+    background-color: #0a5236;
+    
+}
+@media only screen and (max-width: 560px){
+  
+    nav ul{
+        display: block;
+    }
+    nav,nav li{
+        width: 100%;
+    }
+/*ボタンの区切り線を消す*/
+    
+    nav li:first-child{
+        border-left: 0px;
+    }
+    nav li{
+        border-right: 0px;
+    }
+}
+
+/*----------------------
+メインビジュアル
+-----------------------*/
+
+#main_visual img{
+    width: 100%;
+}
+
+/*----------------------
+コンテンツ
+-----------------------*/
+
+article{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h2{
+    color: #117b52;
+    font-size: 150px;
+    margin: 80px auto 0px;
+}
+@media only screen and (max-width: 560px){
+    
+    article{
+        width: 100%;
+    }
+    h2{
+        font-size: 75px;
+    }
+}
+ul.news {
+    width: 400px;
+    margin: 0 auto 80px;
+}
+
+.news li {
+    border-bottom: dotted 1px #adadad;
+    padding: 25px 0px;
+    line-height: 1.5;
+}
+
+.news li:first-child{
+    border-top: dotted 1px #adadad;
+}
+@media only screen and (max-width: 560px){
+   
+    ul.news{
+        width: 100%;
+    }
+    ul.news.li{
+        font-size: 15px;
+    }
+}
+ul.topics{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topics li {
+    text-align: left;
+    width: 300px;
+    line-height: 1.5;
+}
+
+ul.topics p {
+    margin-top: 10px;
+}
+@media only screen and (max-width: 560px){
+    ul.topics{
+        display: block;
+    }
+    ul.topics li{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    ul.topics img{
+width: 100%;}
+    ul.topics p{
+        width: 100%;
+        font-size: 17px;
+        padding: 5px 15px 0px;
+    }
+}
+/*---------------
+フッター
+--------------*/
+
+footer {
+    width: 100%;
+    margin: 150px auto 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #e3e3e3;
+}
